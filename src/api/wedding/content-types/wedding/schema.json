@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weddings",
+  "info": {
+    "singularName": "wedding",
+    "pluralName": "weddings",
+    "displayName": "wedding",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "default": "photo 1"
+    },
+    "Alt": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "URL": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "config/**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "config/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "extensions/**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "extensions/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advertisments",
+  "info": {
+    "singularName": "advertisment",
+    "pluralName": "advertisments",
+    "displayName": "advertisment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "default": "photo 1"
+    },
+    "Alt": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "URL": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
