@@ -916,20 +916,23 @@ export interface ApiFoodFood extends Schema.CollectionType {
   };
 }
 
-export interface ApiMainMain extends Schema.SingleType {
+export interface ApiMainMain extends Schema.CollectionType {
   collectionName: 'mains';
   info: {
     singularName: 'main';
     pluralName: 'mains';
-    displayName: 'main';
+    displayName: 'Main';
     description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    image: Attribute.Media & Attribute.Required;
-    imageType: Attribute.String & Attribute.Required;
+    title: Attribute.String & Attribute.Required;
+    Image: Attribute.Media & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
+    positionNumber: Attribute.String & Attribute.Required;
+    imageUrl: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
