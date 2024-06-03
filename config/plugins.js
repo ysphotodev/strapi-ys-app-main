@@ -1,4 +1,5 @@
-module.exports = ({ env }) => ({
+module.exports = ({ env }) => (
+  {
   upload: {
     config: {
       provider: 'cloudinary',
@@ -13,4 +14,5 @@ module.exports = ({ env }) => ({
       },
     },
   },
-});
+}
+);
